@@ -5,7 +5,79 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        Test
+        <section class="add-book">
+            <div>
+                <div>
+                    <h3>Add a Book</h3>
+                </div>
+                <div>
+                    <form onsubmit="doSomething()">
+                        <div class="add-book-divs add-book-labels">
+                            <label for="book-author">Book Author:</label>
+                            <br>
+                            <label for="book-name">Book Name:</label>
+                        </div>
+                        <div class="add-book-divs add-book-inputs">
+                            <input type="text" name="book-author">
+                            <br>
+                            <input type="text" name="book-name">
+                        </div>
+                        <div class="add-book-divs">
+                            <div>
+                                <h4>Genre</h4>
+                            </div>
+                            <div class="add-book-checkbox">
+                                <input type="checkbox" name="comedy" value="comedy">Comedy<br>
+                                <input type="checkbox" name="crime" value="crime">Crime<br>
+                                <input type="checkbox" name="drama" value="drama">Drama<br>
+                            </div>
+                        </div>
+                        <div class="add-book-divs add-book-button">
+                            <button type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="search-book">
+            <div>
+                <div>
+                    <h3>Search for a book</h3>
+                </div>
+                <div>
+                    <form onsubmit="doSomethingElse()">
+                        <div class="search-book-divs">
+                            <label for="search-item">Search By:</label>
+                        </div>
+                        <div class="search-book-divs">
+                            <select name="search-item">
+                                <option value="author">Author</option>
+                                <option value="name">Name</option>
+                            </select>
+                        </div>
+                        <div class="search-book-divs">
+                            <input type="text" name="search-by-this">
+                        </div>
+                        <div class="search-book-divs">
+                            <button type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="display-books">
+            <div>
+                <table>
+                    <tr>
+                        <td>Id</td>
+                        <td>Book Name</td>
+                        <td>Author</td>
+                        <td>Genres</td>
+                        <td>Comments</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
         <script src="js/index.js"></script>
     </body>
 </html>
